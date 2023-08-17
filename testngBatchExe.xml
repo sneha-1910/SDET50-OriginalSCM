@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite" >
+  <test thread-count="5" parallel="tests" name="Test" preserve-order="false" >
+    <classes>
+      <class name="com_scm_Practice_TESTNG.Addp_AddD_TEST"/>
+      <class name="com_scm_Practice_TESTNG.Addm_ADDR_TEST"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

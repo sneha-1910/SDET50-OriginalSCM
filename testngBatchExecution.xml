@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+  <test thread-count="1" parallel="tests" name="Test" preserve-order="false">
+    <classes>
+      <class name="com_scm_Practice_TESTNG.CReate_Retail_Test"/>
+      <class name="com_scm_Practice_TESTNG.Create_manu_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

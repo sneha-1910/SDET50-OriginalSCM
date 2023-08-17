@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+  <test thread-count="1" parallel="tests" name="Test">
+    <classes>
+     <class name="com_scm_Practice_TESTNG.Project_System_Admin_addManu_Test"/>
+      <class name="com_scm_Practice_TESTNG.Project_Smoke_Adminadd_distributor_Test"/>
+      <class name="com_scm_Practice_TESTNG.Project_Smoke_AdminLogin_Test"/>   
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
