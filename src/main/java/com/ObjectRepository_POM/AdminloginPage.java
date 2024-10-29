@@ -44,6 +44,7 @@ public class AdminloginPage extends WebDriverUtility {
 			return Login_button;
 		}
 		
+		
 		//business libraries
 		
        public void  ClickOnAdminLogin(String USERNAME,String PASSWORD,String ADMIN)
@@ -52,7 +53,6 @@ public class AdminloginPage extends WebDriverUtility {
     	   Password.sendKeys(PASSWORD);
     	   select(ADMIN, Dropdown);
     	   Login_button.click();
-    	   
     	   
        }
 	

@@ -15,8 +15,7 @@ public class DataBaseUtility {
 		Driver driver=new Driver();
 		DriverManager.registerDriver(driver);
 		 con = DriverManager.getConnection(IpathConstants.dbURL, IpathConstants.dbUsername, IpathConstants.dbpath);
-		
-		
+	
 	}
 		
 	public String executeQueryAndGetData(String query,int columnNo,String Expdata) throws SQLException	
@@ -32,6 +31,7 @@ public class DataBaseUtility {
 		    	break;
 		    	
 		    }
+		    
 	    }
 	   if(flag==true)
 	   {

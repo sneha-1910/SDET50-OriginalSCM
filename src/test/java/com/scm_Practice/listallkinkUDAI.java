@@ -25,7 +25,7 @@ public class listallkinkUDAI {
 		
 	// launch the application
 		driver.get("https://uidai.gov.in/");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		 List<WebElement> listlink = driver.findElements(By.xpath("//a"));
 		System.out.println(listlink.size());

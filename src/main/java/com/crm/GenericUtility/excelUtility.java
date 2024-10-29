@@ -41,7 +41,7 @@ public class excelUtility {
 			Workbook wb=WorkbookFactory.create(fi);
 			Sheet sh = wb.getSheet(sheetName);
 			int count=sh.getLastRowNum();
-			return count;
+			return count; 
 	 }
 	 public HashMap<String, String> getMultipleDataFromExcel(String sheetName,int keycolumn,int valuecolumn,WebDriver driver) throws Throwable
 	 {
@@ -105,10 +105,8 @@ public class excelUtility {
 				 obj[i][j]=sh.getRow(i).getCell(j).getStringCellValue();	
 				}
 			}
-		    	return obj;	
-		       
-		       
-		       
+		    	return obj;	       
+		       	       
 	  }
 
 }

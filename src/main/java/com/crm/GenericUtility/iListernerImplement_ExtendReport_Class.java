@@ -97,8 +97,5 @@ public class iListernerImplement_ExtendReport_Class implements ITestListener{
 		report.flush();
 		
 		
-	}
-
-	
-	
+	}	
 }

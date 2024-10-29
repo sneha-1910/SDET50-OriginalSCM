@@ -44,7 +44,7 @@ public class manufacturer_invoice_date {
 	
 	driver.get(URL);
 	
-	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	
 	driver.findElement(By.xpath("//input[@name='txtUsername']")).sendKeys(USERNAME);
 	driver.findElement(By.xpath("//input[@name='txtPassword']")).sendKeys(PASSWORD);

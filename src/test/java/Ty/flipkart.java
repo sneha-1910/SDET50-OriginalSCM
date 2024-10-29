@@ -1,30 +1,43 @@
 package Ty;
 
-import java.util.ArrayList;
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import com.google.protobuf.LazyStringArrayList;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class flipkart {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws AWTException {
 		// TODO Auto-generated method stub
-		WebDriverManager.chromiumdriver().setup();
-		WebDriver driver=new ChromeDriver();
+		WebDriverManager.firefoxdriver().setup();
+		WebDriver driver=new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.flipkart.com/");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.findElement(By.xpath("//button[@class='_2KpZ6l _2doB4z']")).click();
-        driver.findElement(By.xpath("//input[@title='Search for products, brands and more']")).sendKeys("Samsung phones");
-        driver.findElement(By.xpath("//button[@type='submit']")).click();
+		driver.findElement(By.xpath("//span[@role='button']")).click();
+		
+      WebElement ele = driver.findElement(By.xpath("//input[@title='Search for Products, Brands and More']"));
+     
+      Actions act=new Actions(driver);
+		act.moveToElement(ele);
+		  ele.sendKeys("Samsung phones");
+		  Robot r=new Robot();
+		  r.keyPress(KeyEvent.VK_ENTER);
+		  r.keyRelease(KeyEvent.VK_ENTER);
+		  
+				  
+		  
+		 
+     //  driver.findElement(By.xpath("//div[@class='_2SmNnR']")).click();
         
         List<WebElement> names = driver.findElements(By.xpath("//div[@class='_2kHMtA']//div[@class='_4rR01T']"));
         System.out.println(names.size());

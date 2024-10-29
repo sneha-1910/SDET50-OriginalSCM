@@ -14,7 +14,7 @@ public class JavaUtility {
 	}
 	public String getSystemDate()
 	{
-		Date d=new Date();
+		Date d=new Date(); 
 		String date = d.toString();
 		return date;
 		

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
@@ -56,7 +57,7 @@ public class manufacturer_invoice_dateGeneric {
 	
 	driver.get(URL);
 	
-	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	
 	//driver.findElement(By.xpath("//input[@name='txtUsername']")).sendKeys(USERNAME);
 	//driver.findElement(By.xpath("//input[@name='txtPassword']")).sendKeys(PASSWORD);

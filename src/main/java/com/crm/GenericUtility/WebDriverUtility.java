@@ -148,7 +148,7 @@ public class WebDriverUtility {
 		//step3:check whether there is next window
 		while(it.hasNext()) 
 		{
-			//step4:capture current window id
+			//step4:capture current window id 
 			String winId = it.next();
 			
 			//step5:switch to current window to capture title

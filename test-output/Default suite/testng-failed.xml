@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com_scm_Practice_TESTNG.Project_System_Retiler_Order">
+      <class name="com_scm_Practice_TESTNG.Basic_TESTNG_TEST1">
         <methods>
-          <include name="cofig_BM"/>
-          <include name="Config_AS"/>
-          <include name="Config_AC"/>
-          <include name="Config_AM"/>
-          <include name="Config_BS"/>
-          <include name="RetilerNewOrder"/>
-          <include name="config_BC"/>
+          <include name="EditData"/>
         </methods>
-      </class> <!-- com_scm_Practice_TESTNG.Project_System_Retiler_Order -->
+      </class> <!-- com_scm_Practice_TESTNG.Basic_TESTNG_TEST1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

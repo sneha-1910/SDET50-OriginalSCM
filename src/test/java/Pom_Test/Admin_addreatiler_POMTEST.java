@@ -17,7 +17,7 @@ public class Admin_addreatiler_POMTEST {
 
 	public static void main(String[] args) throws Throwable  {
 		// TODO Auto-generated method stub
-		 FileUtility fLib=new FileUtility();
+		    FileUtility fLib=new FileUtility();
          excelUtility eLib = new excelUtility();
          JavaUtility jLib=new JavaUtility();
          WebDriverUtility wLib=new WebDriverUtility();

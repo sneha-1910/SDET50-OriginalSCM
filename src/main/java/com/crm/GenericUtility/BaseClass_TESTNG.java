@@ -14,7 +14,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-
+import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -37,8 +37,9 @@ public class BaseClass_TESTNG {
 		System.out.println("----Conect to DB----");
 	}
 	
-	//@Parameters("BROWSER")
+//	@Parameters("BROWSER")
 	@BeforeClass(alwaysRun = true)
+//	public void config_BC(String BROWSER) throws IOException 
 	public void config_BC() throws IOException 
 	{
 		String BROWSER = fLib.readDataFromPropertyFile("browser1");
@@ -71,7 +72,7 @@ public class BaseClass_TESTNG {
 		 }
 	 @AfterMethod(alwaysRun = true)
 	 public void Config_AM()
-	 {
+	 {    
 		System.out.println("logout from application");
 	 }
 	 
